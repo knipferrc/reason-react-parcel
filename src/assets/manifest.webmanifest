@@ -1,0 +1,9 @@
+{
+  "short_name": "reason-react-parcel",
+  "name": "reason-react-parcel",
+  "description": "ReasonReact parcel boilerplate",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#5755d9",
+  "background_color": "#454d5d"
+}
