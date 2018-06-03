@@ -6,4 +6,3 @@ lib
 .merlin
 .DS_Store
 .bsb.lock
-package-lock.json

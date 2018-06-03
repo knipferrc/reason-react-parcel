@@ -18,17 +18,18 @@
     "boilerplate"
   ],
   "scripts": {
-    "start": "concurrently \"npm run watch\" \"NODE_ENV=development parcel src/index.html\"",
-    "build": "NODE_ENV=production parcel build src/index.html",
+    "start": "concurrently \"npm run watch\" \"cross-env NODE_ENV=development parcel src/index.html\"",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html",
     "watch": "bsb -make-world -w",
     "format": "prettier --write '**/*.{tsx,ts,css,md,js}'"
   },
   "devDependencies": {
-    "bs-platform": "^3.1.4",
+    "bs-platform": "^3.1.5",
     "bsb-js": "^1.1.3",
     "concurrently": "^3.5.1",
+    "cross-env": "^5.1.6",
     "parcel-bundler": "^1.8.1",
-    "prettier": "^1.13.0"
+    "prettier": "^1.13.4"
   },
   "dependencies": {
     "reason-react": "^0.4.2"
