@@ -5,6 +5,8 @@ ReactDOMRe.renderToElementWithId(
   "root"
 );
 
+ReasonReact.Router.push("");
+
 if (hot) {
   accept();
 };

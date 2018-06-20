@@ -21,14 +21,15 @@
     "start": "concurrently \"npm run watch\" \"cross-env NODE_ENV=development parcel src/index.html\"",
     "build": "cross-env NODE_ENV=production parcel build --experimental-scope-hoisting src/index.html",
     "watch": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
     "format": "prettier --write '**/*.{tsx,ts,css,md,js}'"
   },
   "devDependencies": {
     "bs-platform": "^3.1.5",
     "bsb-js": "^1.1.6",
-    "concurrently": "^3.5.1",
+    "concurrently": "^3.6.0",
     "cross-env": "^5.2.0",
-    "parcel-bundler": "^1.9.1",
+    "parcel-bundler": "^1.9.2",
     "prettier": "^1.13.5"
   },
   "dependencies": {
