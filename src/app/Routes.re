@@ -19,7 +19,7 @@ let mapUrlToRoute = (url: ReasonReact.Router.url) =>
   | _ => Home
   };
 
-let component = ReasonReact.reducerComponent("App");
+let component = ReasonReact.reducerComponent("Routes");
 
 let make = (_children) => {
   ...component,
@@ -38,5 +38,5 @@ let make = (_children) => {
     switch (self.state.route) {
     | Home => <Home />
     | Dashboard => <Dashboard />
-    },
+    }
 };
